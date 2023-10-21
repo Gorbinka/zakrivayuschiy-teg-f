@@ -1,1 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+	--main-font:'Inter', sans-serif;			 /*Шрифт семества Inter*/
+	--accent-font:'PressStart2P', sans-serif;	 /*Шрифт семества PressStart2P*/
+	--weight-main-text:400;						 /*Вес шрифта основгого текста светлой темы*/
+	--weight-title-text:700;					 /*Вес шрифта заголовков светлой темы*/
+	--themes-main-color:#000;					/*Цвет текста*/
+	--themes-background:#FFF;					/*Основной цвет фона*/
+	--gradient-start-color:#E7E7E7 0%;			/*Цвет начала линейного градиента*/
+	--gradient-end-color:#1A1A1A 100%;			/*Цвет конца линейного градиента*/
+	--first-color-gradient:#d3d3d3;			/*Первый цвет повторного градиента*/
+	--second-color-gradient:transparent;		 /*Второй цвет повторного градиента*/
+  }

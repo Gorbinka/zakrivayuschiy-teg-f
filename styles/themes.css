@@ -4,3 +4,67 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+	--weight-main-text:400;						 /*Вес шрифта основгого текста светлой темы*/
+	--weight-title-text:700;					 /*Вес шрифта заголовков светлой темы*/
+	--themes-main-color:#000;					/*Цвет бордеров*/
+	--themes-background:#FFF;					/*Основной цвет фона*/
+	--gradient-start-color:#E7E7E7 0%;			/*Цвет начала линейного градиента*/
+	--gradient-end-color:#1A1A1A 100%;			/*Цвет конца линейного градиента*/
+	--first-color-gradient:#d3d3d3;			/*Первый цвет повторного градиента*/
+	--second-color-gradient:transparent;		 /*Второй цвет повторного градиента*/
+}
+
+:root.theme-dark {
+  --weight-main-text:465;
+  --weight-title-text:785;
+  --themes-main-color:#00CC14;
+  --themes-background:#000;
+  --gradient-start-color:#007F0C 0%;
+  --gradient-end-color:#004306 100%;
+  --first-color-gradient:#000;
+  --second-color-gradient:transparent;
+}
+
+/* :root.page.theme-light {
+  --weight-main-text:400;
+  --weight-title-text:700;
+  --themes-main-color:#000;
+  --themes-background:#FFF;
+  }
+  
+:root.page.theme-dark {
+	  --weight-main-text:465;
+	  --weight-title-text:785;
+	  --themes-main-color:#00CC14;
+	  --themes-background:#000;
+  }
+	 */
+
+
+  @media (prefers-color-scheme: dark) {
+	:root {
+	--weight-main-text:465;
+	--weight-title-text:785;
+	--themes-main-color:#00CC14;
+	--themes-background:#000;
+	--gradient-start-color:#007F0C 0%;
+ 	--gradient-end-color:#004306 100%;
+	--first-color-gradient:#000;
+	--second-color-gradient:transparent;
+	}
+  }
+  
+  @media (prefers-color-scheme: light) {
+	:root {
+		--weight-main-text:400;
+		--weight-title-text:700;
+		--themes-main-color:#000;
+		--themes-background:#FFF;
+		--gradient-start-color:#E7E7E7 0%;
+		--gradient-end-color:#1A1A1A 100%;
+		--first-color-gradient:#d3d3d3;
+		--second-color-gradient:transparent;
+	}
+  }
