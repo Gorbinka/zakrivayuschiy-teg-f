@@ -102,8 +102,8 @@
 }
 
 .theme-menu__button:hover {
-cursor: pointer;
-opacity: 0.6;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus {
@@ -133,14 +133,14 @@ opacity: 0.6;
 main {
   display: flex;
   flex-direction: column;
-    gap:50px;
+  gap:50px;
 }
 
 .card__car {
-background-color: var(--themes-background);
-border:2px solid var(--themes-main-color);
-max-width: 698px;
-margin:0 auto;
+  background-color: var(--themes-background);
+  border:2px solid var(--themes-main-color);
+  max-width: 698px;
+  margin:0 auto;
 }
 
 .card__name {
@@ -160,18 +160,18 @@ margin:0 auto;
 }
 
 .card__image-box {
-position: relative;
+  position: relative;
 
 }
 
 .card__image {
-width:100vw;
-max-width: 696px;
-min-width: 371px;
+  width:100vw;
+  max-width: 696px;
+  min-width: 371px;
 }
 
 .first-image {
-filter: sepia(70%);
+  filter: sepia(70%);
 }
 
 .second-image {
@@ -217,9 +217,9 @@ filter: sepia(70%);
   background-blend-mode:hard-light;
   text-shadow:
   -1px 0 var(--color-of-obvodka), 
- 0 1px var(--color-of-obvodka), 
- 1px 0 var(--color-of-obvodka), 
- 0 -1px var(--color-of-obvodka);
+  0 1px var(--color-of-obvodka), 
+  1px 0 var(--color-of-obvodka), 
+  0 -1px var(--color-of-obvodka);
 }
 
 @supports((text-stroke: 1px var(--color-of-obvodka)) or (-webkit-text-stroke: 1px var(--color-of-obvodka))) {
@@ -249,17 +249,17 @@ filter: sepia(70%);
 }
 
 .like__interractive {
-display: flex;
-justify-content: end;
-margin-right:25px;
-gap:12px;
+  display: flex;
+  justify-content: end;
+  margin-right:25px;
+  gap:12px;
 }
 
 .card__icon-button {
-border:none;
-background-color:var(--themes-background);
-width: 38px;
-height: 35px;
+  border:none;
+  background-color:var(--themes-background);
+  width: 38px;
+  height: 35px;
 }
 
 .card__icon-button:hover {
@@ -310,77 +310,76 @@ height: 35px;
   transition: fill 0.3s 0.05s linear;
 }
 
-
 .like-icon.is-liked .core {
   fill: var(--color-main-body);
   transition:fill 0.3s 0.05s linear;
-  }
-  
-  .like-icon.is-liked .main-body {
-    fill: var(--color-main-body);
-    transition:fill 0.3s 0.05s linear;
-  }
-  
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--color-main-body);
+  transition:fill 0.3s 0.05s linear;
+}
+
   .like-icon.is-liked .contour {
-    fill: var(--color-main-body);
-    transition:fill 0.3s 0.06s linear;
-  }
-  
-  .like-icon.is-liked .sparks {
-    fill: var(--color-main-body);
-    transition:fill 0.3s 0.05s linear;
-  }
+  fill: var(--color-main-body);
+  transition:fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .sparks {
+  fill: var(--color-main-body);
+  transition:fill 0.3s 0.05s linear;
+}
 
 .card__like-button {
-background-color: var(--themes-background);
-border:2px solid var(--themes-main-color);
-width: 130px;
-height: 38px;
-margin-bottom: 25px;
-position: relative;
-color: var(--themes-main-color);
+  background-color: var(--themes-background);
+  border:2px solid var(--themes-main-color);
+  width: 130px;
+  height: 38px;
+  margin-bottom: 25px;
+  position: relative;
+  color: var(--themes-main-color);
 }
 
 .card__like-button:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .card__like-button::after {
-content: "";
-position: absolute;
-z-index: 0;
-display: block;
-inset: 0;
-background-color: var(--themes-main-color);
-transform: scaleX(0);
-transition: transform 0.5s ease-in-out;
-transform-origin: left;
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  inset: 0;
+  background-color: var(--themes-main-color);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
 }
 
 .card__like-button:hover::after {
-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .card__like-button:focus {
-outline:none;
+  outline:none;
 }
 
 .card__like-button:focus-visible   {
-outline:none;
-box-shadow: 2px 2px 0px 0px var(--themes-main-color);
-transition: box-shadow 0.3s;
+  outline:none;
+  box-shadow: 2px 2px 0px 0px var(--themes-main-color);
+  transition: box-shadow 0.3s;
 }
 
 .button__text {
-font-family: var(--accent-font);
-line-height: 90%; /* 12.6px */
-font-weight:400;
-font-size: 14px;
-position: relative;
-z-index: 2;
-color:var(--themes-hover-button-color);
-mix-blend-mode: difference;
-transition: color 1s ease;
+  font-family: var(--accent-font);
+  line-height: 90%; /* 12.6px */
+  font-weight:400;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+  color:var(--themes-hover-button-color);
+  mix-blend-mode: difference;
+  transition: color 1s ease;
 }
 
 .save__box {
@@ -406,15 +405,15 @@ transition: color 1s ease;
 }
 
 .save__box-button::after {
-content: "";
-position: absolute;
-z-index: 0;
-display: block;
-inset: 0;
-background-color: var(--themes-main-color);
-transform: scaleX(0);
-transition: transform 0.5s ease-in-out;
-transform-origin: left;
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  inset: 0;
+  background-color: var(--themes-main-color);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
 }
 
 .save__box-button:hover::after {
@@ -428,7 +427,6 @@ transform-origin: left;
   font-style: normal;
   line-height: 90%; /* 12.6px */
 }
-
 
 .save__box-image-svg {
   width:28px;
@@ -451,31 +449,31 @@ transform-origin: left;
 }
 
 .dialog {
-width:calc(100vw - 34px);
-max-width:357px;
-margin: auto;
-border:2px solid var(--themes-main-color);
-background-color: var(--themes-background);
+  width:calc(100vw - 34px);
+  max-width:357px;
+  margin: auto;
+  border:2px solid var(--themes-main-color);
+  background-color: var(--themes-background);
 }
 
 .dialog__content {
-display: flex;
-flex-direction: column;
-gap:30px;
-padding:11px 32px 11px 32px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  padding:11px 32px 11px 32px;
 }
 
 .dialog__top-text {
-display:flex;
-flex-direction: row;
-gap:20px;
+  display:flex;
+  flex-direction: row;
+  gap:20px;
 }
 
 .dialog__floppy {
-margin-top:10px;
+  margin-top:10px;
   width:100px;
-height:40px;
-color: var(--color-svg);
+  height:40px;
+  color: var(--color-svg);
 }
 
 .form_label {
@@ -498,10 +496,9 @@ color: var(--color-svg);
   text-transform: uppercase;
   padding:11px 17px;
   border:2px solid var(--themes-main-color);
-background-color: var(--themes-background);
+  background-color: var(--themes-background);
 }
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.8);
-  
-} 
+}

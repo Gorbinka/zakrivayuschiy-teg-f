@@ -24,31 +24,12 @@
 }
 
 :root.theme-dark {
-  --weight-main-text:465;
-  --weight-title-text:785;
-  --themes-main-color:#00CC14;
-  --themes-background:#000;
-  --gradient-start-color:#007F0C 0%;
-  --gradient-end-color:#004306 100%;
-  --first-color-gradient:#000;
-  --second-color-gradient:transparent;
-  --color-of-obvodka:#000000;
-  --themes-hover-button-color:#00CC14;
-  --color-svg:#00CC14;
-  --color-contour:#00CC14;
-  --color-main-body:red;
-  --color-sparks:transparent;	
-  --color-core:#FFF;
-}
-
-  @media (prefers-color-scheme: dark) {
-	:root {
 	--weight-main-text:465;
 	--weight-title-text:785;
 	--themes-main-color:#00CC14;
 	--themes-background:#000;
 	--gradient-start-color:#007F0C 0%;
- 	--gradient-end-color:#004306 100%;
+	--gradient-end-color:#004306 100%;
 	--first-color-gradient:#000;
 	--second-color-gradient:transparent;
 	--color-of-obvodka:#000000;
@@ -58,6 +39,25 @@
 	--color-main-body:red;
 	--color-sparks:transparent;	
 	--color-core:#FFF;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--weight-main-text:465;
+		--weight-title-text:785;
+		--themes-main-color:#00CC14;
+		--themes-background:#000;
+		--gradient-start-color:#007F0C 0%;
+		--gradient-end-color:#004306 100%;
+		--first-color-gradient:#000;
+		--second-color-gradient:transparent;
+		--color-of-obvodka:#000000;
+		--themes-hover-button-color:#00CC14;
+		--color-svg:#00CC14;
+		--color-contour:#00CC14;
+		--color-main-body:red;
+		--color-sparks:transparent;	
+		--color-core:#FFF;
 	}
   }
   
