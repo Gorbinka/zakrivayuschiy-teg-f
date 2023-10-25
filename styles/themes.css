@@ -14,6 +14,13 @@
 	--gradient-end-color:#1A1A1A 100%;			/*Цвет конца линейного градиента*/
 	--first-color-gradient:#d3d3d3;			/*Первый цвет повторного градиента*/
 	--second-color-gradient:transparent;		 /*Второй цвет повторного градиента*/
+	--color-of-obvodka:#ffffff;					/*Цвет обводки лейбла*/
+	--themes-hover-button-color:#FFF;
+	--color-svg:#FFF;
+	--color-contour:#000;
+	--color-main-body:red;
+	--color-sparks:transparent;	
+	--color-core:#FFF;
 }
 
 :root.theme-dark {
@@ -25,23 +32,14 @@
   --gradient-end-color:#004306 100%;
   --first-color-gradient:#000;
   --second-color-gradient:transparent;
+  --color-of-obvodka:#000000;
+  --themes-hover-button-color:#00CC14;
+  --color-svg:#00CC14;
+  --color-contour:#00CC14;
+  --color-main-body:red;
+  --color-sparks:transparent;	
+  --color-core:#FFF;
 }
-
-/* :root.page.theme-light {
-  --weight-main-text:400;
-  --weight-title-text:700;
-  --themes-main-color:#000;
-  --themes-background:#FFF;
-  }
-  
-:root.page.theme-dark {
-	  --weight-main-text:465;
-	  --weight-title-text:785;
-	  --themes-main-color:#00CC14;
-	  --themes-background:#000;
-  }
-	 */
-
 
   @media (prefers-color-scheme: dark) {
 	:root {
@@ -53,6 +51,13 @@
  	--gradient-end-color:#004306 100%;
 	--first-color-gradient:#000;
 	--second-color-gradient:transparent;
+	--color-of-obvodka:#000000;
+	--themes-hover-button-color:#00CC14;
+	--color-svg:#00CC14;
+	--color-contour:#00CC14;
+	--color-main-body:red;
+	--color-sparks:transparent;	
+	--color-core:#FFF;
 	}
   }
   
@@ -66,5 +71,12 @@
 		--gradient-end-color:#1A1A1A 100%;
 		--first-color-gradient:#d3d3d3;
 		--second-color-gradient:transparent;
+		--color-of-obvodka:#ffffff;
+		--themes-hover-button-color:#FFF;
+		--color-svg:#FFF;
+		--color-contour:#000;
+		--color-main-body:red;
+		--color-sparks:transparent;	
+		--color-core:#FFF;
 	}
   }

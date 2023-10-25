@@ -11,4 +11,11 @@
 	--gradient-end-color:#1A1A1A 100%;			/*Цвет конца линейного градиента*/
 	--first-color-gradient:#d3d3d3;			/*Первый цвет повторного градиента*/
 	--second-color-gradient:transparent;		 /*Второй цвет повторного градиента*/
-  }
+	--color-of-obvodka:#ffffff;				/*Цвет обводки лейбла*/
+	--themes-hover-button-color:#FFF;			/*Меняющийся цвет текста в кнопке*/
+  	--color-svg:#FFF;							/*Цвет значка сохранить*/
+	--color-contour:#000;						/*Цвет контура у сердца*/
+	--color-main-body:red;						/*Цвет заливки у сердца*/
+	--color-sparks:transparent;						/*Цвет точек вокруг сердца*/
+	--color-core:#FFF;							/*Цвет центра у сердца*/
+}
