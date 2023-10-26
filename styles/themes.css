@@ -21,6 +21,7 @@
 	--color-main-body:red;
 	--color-sparks:transparent;	
 	--color-core:#FFF;
+	--color-dialog-svg:#000;
 }
 
 :root.theme-dark {
@@ -39,6 +40,7 @@
 	--color-main-body:red;
 	--color-sparks:transparent;	
 	--color-core:#FFF;
+	--color-dialog-svg:#00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,6 +60,7 @@
 		--color-main-body:red;
 		--color-sparks:transparent;	
 		--color-core:#FFF;
+		--color-dialog-svg:#00CC14;
 	}
   }
   
@@ -78,5 +81,6 @@
 		--color-main-body:red;
 		--color-sparks:transparent;	
 		--color-core:#FFF;
+		--color-dialog-svg:#000;
 	}
   }

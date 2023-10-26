@@ -18,4 +18,5 @@
 	--color-main-body:red;						/*Цвет заливки у сердца*/
 	--color-sparks:transparent;						/*Цвет точек вокруг сердца*/
 	--color-core:#FFF;							/*Цвет центра у сердца*/
+	--color-dialog-svg:#000;
 }
