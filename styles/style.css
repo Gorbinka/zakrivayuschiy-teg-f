@@ -15,7 +15,7 @@
 */
 
 .page {
-  min-inline-size: 320px;
+  min-inline-size:320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--weight-main-text);
@@ -45,9 +45,9 @@
   /* margin:0 14px; */
   /* margin-top: 120px; */
   align-items: center;
-  width: 100vw;
+  width: 100%;
   max-width: 696px;
-  min-width: 320px;
+  /* min-width: 320px; */
   border: 2px solid var(--themes-main-color);
 }
 
@@ -55,10 +55,18 @@
   font-family: var(--accent-font), fantasy;
   color: var(--themes-main-color);
   font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
-  margin-top: 135px;
+  margin-top: 120px;
   /*????????*/
   font-weight: var(--weight-main-text);
   /* cursor: pointer; */
+}
+
+@media (min-width:768px) {
+
+  .header__logo {
+    margin-top: 135px;
+  }
+
 }
 
 .header__title-name {
@@ -141,17 +149,16 @@ main {
 .card__car {
   background-color: var(--themes-background);
   border: 2px solid var(--themes-main-color);
-  width: 96vw;
-  max-width: 698px;
+  width:100% ;
+  max-width: 696px;
   margin: 0 auto;
 }
 
 .card__name {
   font-family: var(--main-font), sans-serif;
   color: var(--themes-main-color);
-  font-weight: var(--weight-title-text);
+  font-variation-settings: "wght" var(--weight-title-text);
   font-size: 18px;
-  font-style: normal;
   line-height: normal;
   margin: 6px 10px 4px 10px;
 }
@@ -165,9 +172,11 @@ main {
 .card__image-box {
   position: relative;
   width: 100%;
-  max-width: 696px;
+  /* max-width: 696px; */
   border: 2px solid var(--themes-main-color);
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__image {
@@ -471,21 +480,7 @@ main {
 
 }
 
-@media (max-width:380px) {
-
-  .header__logo {
-    margin-top: 20px;
-  }
-
-}
-
-.dialog_g {
-  background-color: var(--themes-background);
-  /* padding:18px 0px; */
-  border: 2px solid var(--themes-main-color);
-}
-
-.dialog_g[open="true"] {
+.dialog_g[open] {
   width: calc(100vw - 34px);
   max-width: 357px;
   margin: auto;
