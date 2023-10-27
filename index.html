@@ -343,21 +343,13 @@
         </button>
       </div>
       <dialog class="dialog_g" id="dialog-id">
-        <form method="dialog">
-          <button class="krestik">
-            <span class="visually-hidden">Закрыть окно</span>
-            <!-- <svg class="krestik" width="39" height="36" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697 2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z"/>
-              </svg> -->
-          </button>
-        </form>
-        <form class="dialog__content">
-          <div class="dialog__top-text">
-            <svg class="dialog__floppy" width="39" height="39" viewBox="0 0 39 39" fill="currentColor">
-              <use href="./svg/floppy.svg#floppy"></use>
-            </svg>
-            <label class="form_label">Вставьте дискету,&nbsp;чтобы продолжить</label>
-          </div>
+        <div class="dialog__top-text">
+          <svg class="dialog__floppy" width="39" height="39" viewBox="0 0 39 39" fill="currentColor">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <label class="form_label">Вставьте дискету,&nbsp;чтобы продолжить</label>
+        </div>
+        <form class="dialog__content" method="dialog">
           <button class="button_ok" type="submit" >
           <span class="button__text">OK</span>
           </button>

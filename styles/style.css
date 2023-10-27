@@ -481,7 +481,8 @@ main {
 
 .dialog_g {
   background-color: var(--themes-background);
-  padding:16px 0;
+  /* padding:18px 0px; */
+  border: 2px solid var(--themes-main-color);
 }
 
 .dialog_g[open="true"] {
@@ -490,27 +491,22 @@ main {
   margin: auto;
   border: 2px solid var(--themes-main-color);
   background-color: var(--themes-background);
-  position: relative;
-}
-
-.dialog__content {
-  display: flex;
-  flex-direction: column;
-  max-width: 357px;
-  /* min-width: 341px; */
-  gap: 30px;
-  padding: 11px 20px 11px 20px;
-  background-color: var(--themes-background);
 }
 
 .dialog__top-text {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  max-width: 317px;
+  gap: 8px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0 0 10px;
 }
 
 .dialog__floppy {
-  margin-top: 10px;
+  /* margin-top: 10px;
+  margin-left: 10px; */
   width: 100px;
   height: 40px;
   color: var(--color-dialog-svg);
@@ -523,8 +519,17 @@ main {
   font-size: 14px;
   font-style: normal;
   line-height: 150%;
+  /* max-width: 250px; */
   /* 21px */
   text-transform: uppercase;
+}
+
+.dialog__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 357px;
+  padding: 26px 16px 12px 16px;
+  background-color: var(--themes-background);
 }
 
 .button_ok {
@@ -536,7 +541,7 @@ main {
   line-height: 90%;
   /* 12.6px */
   text-transform: uppercase;
-  padding: 11px 17px;
+  padding: 11px 0;
   border: 2px solid var(--themes-main-color);
   background-color: var(--themes-background);
   position: relative;
@@ -574,13 +579,4 @@ main {
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.8);
-}
-
-.krestik {
-  background-color: transparent;
-  cursor: pointer;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  border-color:var(--themes-main-color);
 }
